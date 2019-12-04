@@ -34,7 +34,7 @@ class MainActivity : AppCompatActivity() {
         else{
             img.setImageResource(R.drawable.over)
         }
-        bmi.setText(R.string.bmi.toString() + String.format("%.2f", result))
+        bmi.setText("BMI : " + String.format("%.2f", result))
     }
     private fun reset(){
         Toast.makeText(this, "button clicked",
